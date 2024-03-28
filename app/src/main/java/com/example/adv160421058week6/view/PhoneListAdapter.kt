@@ -35,7 +35,11 @@ class PhoneListAdapter(val phoneList: ArrayList<Phone>): RecyclerView.Adapter<Ph
             txtSpecs.text = "Specs:\n"
             if (specs != null) {
                 txtSpecs.append(
-                    "Display: ${specs.display}\nProcessor: ${specs.processor}\nRAM: ${specs.RAM}\nStorage: ${specs.storage}\nCamera: ${specs.camera}"
+                    "Display: ${specs.display}" +
+                            "\nProcessor: ${specs.processor}" +
+                            "\nRAM: ${specs.RAM}" +
+                            "\nStorage: ${specs.storage}" +
+                            "\nCamera: ${specs.camera}"
                 )
             }
 
